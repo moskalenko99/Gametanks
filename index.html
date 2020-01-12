@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			position: relative;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+		}
+
+		.rect {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 65px;
+			height: 65px;
+			background-image: url("https://www.androidfreeware.net/software_images/battle-city1.1.png");
+		}
+
+		.shot {
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			background: red;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="./bullet.js"></script>
+	<script src="./tank.js"></script>
+	<script src="./aplication.js"></script>
+	<script>
+		var aplication = new Aplication();
+
+		aplication.start();
+	</script>
+</body>
+
+</html>
